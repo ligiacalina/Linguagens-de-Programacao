@@ -1,3 +1,7 @@
+/* Ling. Prog. 24.1 - Ligia Calina Bueno Bonifacio - Exercicio Final
+*  Arquivo header contendo as assinaturas dos métodos e as variáveis da classe Sistema.
+*/
+
 #ifndef SISTEMATAREFAS_HPP
 #define SISTEMATAREFAS_HPP
 
@@ -14,10 +18,6 @@ namespace py = pybind11;
 
 class SistemaTarefas{
     public:
-
-        SistemaTarefas();
-        ~SistemaTarefas();
-
         void carregarTarefas(string arquivo, string tipo);
         void listarTarefas();
         void adicionarTarefa();

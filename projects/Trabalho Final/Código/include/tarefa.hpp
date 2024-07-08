@@ -1,3 +1,10 @@
+/* Ling. Prog. 24.1 - Ligia Calina Bueno Bonifacio - Exercicio Final
+*  Arquivo header contendo as assinaturas dos métodos e as variáveis da classe Tarefa.
+*/
+
+#ifndef TAREFA_HPP
+#define TAREFA_HPP
+
 #include <iostream>
 #include <string>
 
@@ -26,3 +33,5 @@ class Tarefa{
         string urgencia;
         string recorrencia;
 };
+
+#endif // TAREFA_HPP

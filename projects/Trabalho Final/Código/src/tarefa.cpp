@@ -1,3 +1,10 @@
+/* Ling. Prog. 24.1 - Ligia Calina Bueno Bonifacio - Exercicio Final
+*  AImplementação da classe `Tarefa` que define as propriedades das tarefas.
+*/
+
+#ifndef TAREFA_CPP
+#define TAREFA_CPP
+
 #include "tarefa.hpp"
 
 void Tarefa::setAcaoTarefa(string acaoTarefa){ acao = acaoTarefa;}
@@ -30,3 +37,5 @@ int Tarefa::getIndiceRecorrencia(string recorrencia){
     else if(recorrencia != ""){ return 4;}
     return 0; // Caso nenhuma recorrencia seja correspondida
 }
+
+#endif // TAREFA_CPP

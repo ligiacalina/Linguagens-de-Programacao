@@ -1,3 +1,7 @@
+/* Ling. Prog. 24.1 - Ligia Calina Bueno Bonifacio - Exercicio Final
+*  Implementação das funcionalidades de gerenciamento de tarefas.
+*/
+
 #ifndef SISTEMATAREFAS_CPP
 #define SISTEMATAREFAS_CPP
 
@@ -5,14 +9,6 @@
 
 using namespace std;
 namespace py = pybind11;
-
-SistemaTarefas::SistemaTarefas() {
-    //py::initialize_interpreter();
-}
-
-SistemaTarefas::~SistemaTarefas() {
-    //py::finalize_interpreter();
-}
 
 void SistemaTarefas::carregarTarefas(string arquivo, string tipo){
     ifstream file(arquivo);
@@ -60,10 +56,10 @@ void SistemaTarefas::adicionarTarefa(){
     cout << "Digite a acao da tarefa: ";
     cin >> ws;
     getline(cin, acao);
-    // Remover todos os \n da string
-    acao.erase(remove_if(acao.begin(), acao.end(),[](char c) { return c == '\n'; }), acao.end());
+    // Remover todos os \n e \r da string
+    acao.erase(remove_if(acao.begin(), acao.end(), [](char c) { return c == '\r' || c == '\n'; }), acao.end());
 
-    cout << "Digite o indice de urgencia (1: baixa, 2: media, 3: alta, ou qualquer outro numero para sem urgencia): " << acao;
+    cout << "Digite o indice de urgencia (1: baixa, 2: media, 3: alta, ou qualquer outro numero para sem urgencia): ";
     cin >> urgencia;
     cin.ignore();
     cout << "Digite o indice de recorrencia (1: diaria, 2: semanal, 3: mensal, ou qualquer outro numero para sem recorrencia): ";
@@ -177,8 +173,10 @@ void SistemaTarefas::editarTarefa(unsigned int indice){
     if (indiceEdicao == 1) {
         string novaAcao;
         cout << "Digite a nova acao: ";
+        cin >> ws;
         getline(cin, novaAcao);
-        tarefa.setAcaoTarefa(novaAcao);
+        // Remover todos os \n e \r da string
+        novaAcao.erase(remove_if(novaAcao.begin(), novaAcao.end(), [](char c) { return c == '\r' || c == '\n'; }), novaAcao.end());
     } else if (indiceEdicao == 2) {
         int novaUrgencia;
         cout << "Digite o indice de urgencia (1: baixa, 2: media, 3: alta, ou qualquer outro numero para sem urgencia): ";

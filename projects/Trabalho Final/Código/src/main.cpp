@@ -1,3 +1,9 @@
+/* Ling. Prog. 24.1 - Ligia Calina Bueno Bonifacio - Exercicio Final
+*  Arquivo principal do exercicio 
+*  Este e o arquivo principal do programa, o qual possui toda logica principal, arquivos auxiliares,
+*  alem do menu com interacao do usuario.
+*/
+
 #include <iostream>
 #include <vector>
 #include "sistemaTarefas.hpp"

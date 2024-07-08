@@ -1,3 +1,7 @@
+/* Ling. Prog. 24.1 - Ligia Calina Bueno Bonifacio - Exercicio Avaliado 1
+*  Arquivo contendo as definições de bindings para interagir com Python usando Pybind11.
+*/
+
 #include <pybind11/pybind11.h>
 #include "sistemaTarefas.hpp"
 
