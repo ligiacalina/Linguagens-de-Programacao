@@ -1,0 +1,72 @@
+# Sistema de Gerenciamento de Tarefas
+
+Este é um programa em C++ que oferece funcionalidades para gerenciar tarefas, utilizando arquivos para armazenamento e integração com scripts Python para análise de tarefas e exibição de listas de compras.
+
+## Estrutura do Projeto
+
+O projeto é organizado da seguinte forma:
+
+- **src/main.cpp**: Arquivo principal que contém a função `main` do programa.
+- **src/sistemaTarefas.cpp**: Implementação das funcionalidades de gerenciamento de tarefas.
+- **src/tarefa.cpp**: Implementação da classe `Tarefa` que define as propriedades das tarefas.
+- **src/bindings.cpp**: Arquivo contendo as definições de bindings para interagir com Python usando Pybind11.
+- **include/tarefa.hpp**: Arquivo header contendo as assinaturas dos métodos e as variáveis da classe tarefa.
+- **include/sistemaTarefas.hpp**: Arquivo header contendo as assinaturas dos métodos e as variáveis da classe Sistema.
+- **analisarTarefa.py**: Arquivo em Python com a implementação das funções auxiliares usadas em algumas das opções do menu.
+- **tarefas.txt** e **tarefasConcluidas.txt**: Arquivos auxiliares que armazenam as tarefas descritas pelo usuário.
+
+## Compilação e Execução
+
+Para compilar o programa, utilize o Makefile fornecido. Abra o terminal e navegue até o diretório onde os arquivos estão localizados. Em seguida, execute o seguinte comando para compilar:
+
+make
+
+Isso compilará o programa usando o compilador C++ (g++) com as configurações definidas no Makefile.
+
+### Para executar o programa compilado:
+./main
+
+Certifique-se de que todos os arquivos necessários, incluindo main.cpp, sistemaTarefas.cpp, tarefa.cpp, e bindings.cpp estão presentes no diretório src.
+
+## Integração com Python
+
+O programa utiliza integração com script em Python para realizar análise de tarefas e exibir a lista de compras.
+Certifique-se de ter o Python instalado em seu sistema.
+
+### Configurações do Python
+
+A integração com Python é configurada no Makefile e requer Pybind11. Certifique-se de configurar corretamente os diretórios do Python e do Pybind11 no Makefile. 
+Ex.: 
+`Diretório do pybind11`
+PYBIND11_DIR := ./pybind11/include
+
+`Diretório do Python (ajuste conforme necessário)`
+PYTHON_INCLUDE_DIR := C:/msys64/ucrt64/include/python3.11
+PYTHON_LIB_DIR := C:/msys64/ucrt64/lib
+
+`Compilador e flags`
+CXX := g++
+CXXFLAGS := -std=c++11 -O2 -I$(PYBIND11_DIR) -I$(PYTHON_INCLUDE_DIR) -I./include
+LDFLAGS := -L$(PYTHON_LIB_DIR) -lpython3.11
+
+Certifique-se de ajustar os caminhos conforme o local onde o Pybind11 e o Python estão instalados em seu sistema.
+
+## Como Usar
+
+O programa oferece diversas funcionalidades para operar e administrar tarefas:
+
+- **Adicionar Tarefa:** Permite adicionar uma nova tarefa especificando a ação, urgência e recorrência.
+- **Listar Tarefas:** Lista todas as tarefas cadastradas por ordem de urgência.
+- **Analisar Tarefa:** Analisa uma tarefa específica usando um script Python.
+- **Remover Tarefa:** Remove uma tarefa do sistema.
+- **Concluir Tarefa:** Marca uma tarefa como concluída e move para a lista de tarefas concluídas.
+- **Exibir Tarefas Concluídas:** Lista todas as tarefas que foram concluídas.
+- **Editar Tarefa:** Permite editar os detalhes de uma tarefa existente.
+- **Exibir Tarefas Mais Urgentes:** Lista as tarefas com maior urgência.
+- **Exibir Lista de Compras:** Exibe uma lista de compras utilizando um script Python.
+
+Siga as instruções fornecidas pelo programa durante a execução para interagir corretamente com as funcionalidades disponíveis.
+
+## Autor
+Este programa foi desenvolvido por Lígia Calina Bueno Bonifácio como projeto para a disciplina de Linguagens de Programação da Universidade Federal do Rio de Janeiro.
+

@@ -1,0 +1,7 @@
+Calculo 1, 2022.1, 5, 10;
+Circuitos Logicos, 2022.1, 4, 7;
+Computacao 1, 2022.1, 5, 9;
+Circuitos Eletricos 1, 2024.1, 5, 3;
+Eletronica 1, 2024.1, 5, 9;
+Fisica 3, 2024.1, 4, 7;
+Linguagens de Programacao, 2024.1, 4, 10;

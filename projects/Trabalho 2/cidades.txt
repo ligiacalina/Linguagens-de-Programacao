@@ -1,0 +1,16 @@
+Rio de Janeiro,Sao Paulo,434.9;
+Sao Paulo,Belo Horizonte,585;
+Vitoria,Belo Horizonte,515;
+Belo Horizonte,Florianopolis,1372;
+Brasilia,Rio de Janeiro,1167;
+Salvador,Manaus,4846;
+Florianopolis,Sao Paulo,935;
+Manaus,Brasilia,3413;
+Rio de Janeiro,Vitoria,517;
+Sao Paulo,Manaus,3883;
+Vitoria,Brasilia,1242;
+Belo Horizonte,Rio de Janeiro,441;
+Brasilia,Sao Paulo,1166;
+Salvador,Brasilia,1444;
+Florianopolis,Salvador,2657;
+Manaus,Rio de Janeiro,4281;

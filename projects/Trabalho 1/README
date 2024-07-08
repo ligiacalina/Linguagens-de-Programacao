@@ -1,0 +1,36 @@
+README
+Este é o arquivo principal de um programa desenvolvido como parte do exercício avaliado 1 da disciplina de Linguagem de Programação 24.1, ministrada por Ligia Calina Bueno Bonifacio.
+
+1)Arquivos do Programa
+O programa é composto pelos seguintes arquivos:
+
+- main.cpp: Este é o arquivo principal do programa, contendo toda a lógica principal, interação com o usuário e a implementação do menu.
+
+- liga.hpp: Este arquivo contém a declaração da classe Liga e as declarações de funções utilizadas no programa principal relacionadas à liga.
+
+- liga.cpp: Este arquivo contém a implementação dos métodos da classe Liga.
+
+- time.hpp: Este arquivo contém a declaração da classe Time e as declarações de funções utilizadas no programa principal relacionadas aos times.
+
+- time.cpp: Este arquivo contém a implementação dos métodos da classe Time.
+
+- makefile: Este arquivo contém as regras para compilar e construir o programa.
+
+2)Compilação e Execução
+Para compilar o programa, é necessário ter um compilador C++ que suporte o padrão C++11 ou superior. Você pode compilar todos os arquivos-fonte e construir o programa executável utilizando o makefile fornecido. Basta executar o comando make no diretório onde os arquivos estão localizados:
+make
+
+Após a compilação, execute o programa gerado:
+./timesDeFutebol
+
+3)Utilização
+Ao executar o programa, será exibido um menu com as opções disponíveis. Você pode escolher uma das opções digitando o número correspondente e pressionando Enter. As opções disponíveis são:
+
+1 - Exibir a média móvel de gols de três times nos últimos anos em campeonatos nacionais/estaduais.
+2 - Exibir times que apresentaram melhoria de desempenho em um campeonato específico no último ano.
+3 - Exibir times que apresentaram melhoria de desempenho em geral no último ano.
+4 - Exibir o time com maior saldo de gols em determinado campeonato.
+5 - Exibir o time com maior evolução no último ano.
+6 - Sair do programa.
+
+Digite o número correspondente à operação desejada e siga as instruções apresentadas na tela para fornecer os parâmetros necessários, como o número de anos a serem considerados, o índice do campeonato desejado, etc.

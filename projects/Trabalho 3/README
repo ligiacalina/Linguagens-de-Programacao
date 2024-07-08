@@ -1,0 +1,83 @@
+# Sistema de Gerenciamento de Histórico Acadêmico
+
+## Descrição
+
+Este é um sistema em C++ para gerenciar históricos acadêmicos. Ele permite adicionar, remover, buscar disciplinas por período, editar notas, calcular o Coeficiente de Rendimento Acadêmico (CRA) e listar todas as disciplinas. Ele foi feito para que pudesse desenvolver e entender sobrecargas de operadores em C++.
+
+## Estrutura do Projeto
+
+O projeto é composto pelos seguintes arquivos principais:
+
+- **main.cpp**: Contém a lógica principal do programa e o menu interativo.
+- **historico.cpp**: Implementa os métodos da classe `Historico` para gerenciar disciplinas.
+- **disciplina.cpp**: Implementa os métodos da struct `Disciplina` para representar cada disciplina.
+- **disciplina.hpp**: Define a struct `Disciplina` e suas sobrecargas de operadores.
+- **historico.hpp**: Define a classe `Historico` e suas sobrecargas de operadores.
+- **historico.txt**: Arquivo de texto para persistência das disciplinas.
+- **Makefile**: Script para compilar o projeto.
+
+## Compilação e Execução
+
+Para compilar o projeto, utilize o `Makefile` fornecido. Abra um terminal na raiz do projeto e execute:
+
+make
+
+## Estrutura do Projeto
+
+Após a compilação, execute o programa com o comando:
+
+./main
+
+## Funcionalidades
+
+### Adicionar Disciplina
+
+Para adicionar disciplinas ao histórico acadêmico, siga as instruções:
+
+1. No menu principal, escolha a opção `1 - Adicionar disciplina`.
+2. Digite o número de disciplinas que deseja adicionar.
+3. Para cada disciplina, insira o nome, período de conclusão, número de créditos e nota final quando solicitado.
+
+### Remover Disciplina
+
+Para remover uma disciplina do histórico acadêmico:
+
+1. No menu principal, escolha a opção `2 - Remover disciplina`.
+2. Digite o nome da disciplina que deseja remover.
+
+### Buscar Disciplinas por Período
+
+Para buscar disciplinas concluídas em um período específico:
+
+1. No menu principal, escolha a opção `3 - Buscar disciplinas por período`.
+2. Insira o período desejado no formato "AAAA.P", por exemplo, "2022.1".
+
+### Editar a Nota de uma Disciplina
+
+Para editar a nota final de uma disciplina:
+
+1. No menu principal, escolha a opção `4 - Editar a nota de uma disciplina`.
+2. Digite o nome da disciplina que deseja editar.
+3. Insira a nova nota final.
+
+### Calcular o CRA (Coeficiente de Rendimento Acadêmico)
+
+Para calcular o CRA com base nas disciplinas cadastradas:
+
+1. No menu principal, escolha a opção `5 - Calcular o CRA`.
+
+### Listar Todas as Disciplinas
+
+Para visualizar todas as disciplinas cadastradas no histórico acadêmico:
+
+1. No menu principal, escolha a opção `6 - Listar todas as disciplinas`.
+
+### Sair do Programa
+
+Para encerrar a execução do programa:
+
+1. No menu principal, escolha a opção `0 - Sair`.
+
+## Autor
+
+Este programa foi desenvolvido por Ligia Calina Bueno Bonifacio como projeto para a disciplina de Linguagens de Programação.

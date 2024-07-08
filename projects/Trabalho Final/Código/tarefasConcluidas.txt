@@ -1,0 +1,4 @@
+Comprar arroz,2,4;
+comprar duas duzias de ovo,3,4;
+Fazer prova de Fisica 3,3,3;
+Comprar ovos,1,2;

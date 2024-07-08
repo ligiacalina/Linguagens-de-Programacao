@@ -1,0 +1,59 @@
+# Programa de Gerenciamento de Atletas
+
+Este é um programa em C++ que gerencia atletas usando uma estrutura de árvore binária de busca. Ele oferece funcionalidades como adicionar, remover, buscar e imprimir atletas, utilizando classes derivadas de `Atleta`.
+
+## Estrutura do Projeto
+
+O projeto é dividido em várias classes principais:
+
+1. **Atleta**: Classe base que define um atleta genérico.
+   
+2. **AtletaFutebol**, **AtletaKarate**, **AtletaRobotica**, **AtletaVolei**: Classes derivadas de `Atleta` que especializam o tipo de atleta.
+
+3. **No**: Define um nó da árvore binária de busca.
+
+4. **Arvore**: Implementação da árvore binária de busca que gerencia os atletas. Inclui funcionalidades como inserção, busca, remoção e impressão.
+
+5. **Sistema**: Gerencia a interação com o usuário, permitindo adicionar, remover e buscar atletas, além de imprimir a árvore.
+
+## Compilação e Execução
+
+Para compilar o programa, você pode usar um compilador C++ compatível, como g++:
+
+g++ main.cpp sistema.cpp atleta.cpp -o programa
+
+## Para Executar o Programa
+
+Para compilar o programa, utilize o makefile fornecido. Abra o terminal e navegue até o diretório onde os arquivos estão localizados. Em seguida, execute o seguinte comando para compilar:
+
+make
+
+Para executar:
+
+/.main
+
+Certifique-se de que todos os arquivos necessários, incluindo `atleta.hpp`, `arvore.hpp`, `sistema.hpp`, `main.cpp`, `atleta.cpp`, `arvore.cpp` e `sistema.cpp`, estão presentes no diretório de compilação.
+
+## Como Usar
+
+O programa de gerenciamento de atletas oferece diversas funcionalidades para operar e administrar dados de atletas em uma estrutura de árvore. São elas:
+
+- **Adicionar Atleta:**
+  - Ao selecionar esta opção, o programa solicitará que você forneça os detalhes do atleta a ser adicionado. Dependendo da modalidade do atleta (como futebol, vôlei, karatê, robótica), serão solicitadas informações adicionais específicas da modalidade.
+
+- **Remover Atleta:**
+  - Ao escolher esta opção, você deverá inserir o nome exato do atleta que deseja remover do sistema. O programa buscará o atleta na árvore e o removerá, mantendo a estrutura da árvore binária.
+
+- **Buscar Atleta:**
+  - Esta funcionalidade permite que você procure por um atleta específico digitando seu nome. O programa realizará uma busca na árvore binária e informará se o atleta foi encontrado ou não.
+
+- **Imprimir Atletas:**
+  - Ao selecionar esta opção, o programa imprimirá todos os atletas cadastrados no sistema, facilitando a visualização e verificação dos dados armazenados.
+
+Certifique-se de seguir as instruções fornecidas pelo programa durante a execução para interagir corretamente com as funcionalidades disponíveis.
+
+## Autor
+
+Este programa foi desenvolvido por Lígia Calina Bueno Bonifacio como projeto para a disciplina de Linguagens de Programação na UFRJ.
+
+

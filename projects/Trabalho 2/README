@@ -1,0 +1,55 @@
+# Grafo de Cidades - README
+
+Este é um programa em C++ que implementa um grafo de cidades com funcionalidades como cálculo de menor caminho, densidade do grafo, e centralidade de proximidade.
+
+## Estrutura do Projeto
+
+O projeto consiste em três classes principais:
+
+1. **Vertice**: Representa um vértice no grafo, que neste caso é uma cidade. Cada vértice possui um nome.
+
+2. **Aresta**: Representa uma aresta no grafo, que neste caso é uma conexão entre duas cidades. Cada aresta possui uma origem, destino e uma distância.
+
+3. **Grafo**: Representa o próprio grafo, contendo uma lista de vértices e arestas. Esta classe oferece funcionalidades como cálculo de menor caminho usando o algoritmo de Dijkstra, cálculo de densidade do grafo, e determinação do vértice com a maior centralidade de proximidade.
+
+## Compilação e Execução
+
+Para compilar o programa, basta utilizar um compilador C++ compatível, como g++:
+
+    g++ main.cpp -o grafo
+
+
+Para executar o programa:
+
+    main
+
+
+Certifique-se de ter todos os arquivos necessários presentes no diretório de compilação.
+
+## Arquivos
+
+- `vertice.hpp` e `vertice.cpp`: Definem a classe Vertice.
+- `aresta.hpp` e `aresta.cpp`: Definem a classe Aresta.
+- `grafo.hpp` e `grafo.cpp`: Definem a classe Grafo, responsável por gerenciar o grafo e fornecer funcionalidades relacionadas.
+
+## Como Usar
+
+O programa permite ler um arquivo de texto contendo as informações das arestas do grafo, onde cada linha do arquivo representa uma aresta no formato "origem,destino,distancia;". Atente-se a distancia em quilometros.
+
+Por exemplo:
+São Paulo,Rio de Janeiro,400;
+Rio de Janeiro,Belo Horizonte,300;
+Belo Horizonte,Brasília,600;
+
+!!!!!ATENÇÃO:
+Parece haver algum tipo de corrompimento quando a opção 2 do menu é ativada, pois, a partir daí a centralidade do item 5 dá sempre zero. Não foi possível descobrir exatamente onde este corrompimento acontece, mas parece estar relacionado com a variável centralidade. 
+Por isso, para visualizar a opção de centralidade de proximidade, fazê-la antes de ver a opção 2.
+
+## Autor
+
+Este programa foi desenvolvido por Lígia Calina Bueno Bonifacio como projeto para disciplina de Linguagens de Programação.
+
+
+
+
+

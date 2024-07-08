@@ -1,0 +1,7 @@
+Fazer trabalho de LingProg,3,4;
+Fazer exercicios de Circuitos 1,3,4;
+Comprar caderno para o proximo periodo,2,4;
+Limpar a cozinha,2,2;
+Comprar leite,1,2;
+Comprar tinta acrilica,1,4;
+Escovar os dentes,0,1;
